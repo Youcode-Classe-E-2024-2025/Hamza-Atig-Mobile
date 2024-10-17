@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone 16: The Future in Your Hands</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <script>
+        function spark(event) {
+            let i = document.createElement('i');
+            i.style.left = (event.clientX) + 'px';
+            i.style.top = (event.clientY) + 'px';
+            i.style.transform = `scale(${Math.random() * 2 + 1})`;
+            i.style.setProperty('--x', getRandomTransitionValue());
+            i.style.setProperty('--y', getRandomTransitionValue());
+
+            document.body.appendChild(i);
+
+            setTimeout(() => {
+                document.body.removeChild(i);
+            }, 2000);
+        }
+
+
+        function getRandomTransitionValue() {
+            return `${Math.random() * 400 - 200}px`;
+        }
+        document.addEventListener('mousemove', spark);
+        
+    </script>
+
+
+
+    <div class="container">
+        <div class="header1">
+            <img src="img/apple logo.png" alt="Apple Logo" class="logo-img">
+            <div class="menu-bar">
+                <ul class="menu-items">
+                    <li class="menu-item1"><a href="#">Home</a></li>
+                    <li class="menu-item2"><a href="404.html">Deals</a></li>
+                    <li class="menu-item3"><a href="404.html">Contact</a></li>
+                    <li class="menu-item4"><a href="404.html">FAQs</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="c1">
+            <h1 class="hh1">Experience the Future with the iPhone 16!</h1>
+            <img src="img/1.png" alt="iPhone 16" class="iph16">
+            <h1 class="h1">Hello, Apple Intelligence.</h1>
+            <p class="p1">Discover unparalleled performance and cutting-edge technology with the iPhone 16—designed
+                to elevate your mobile experience with stunning visuals, a powerful camera system, and all-day
+                battery life. Whether you're capturing memories or enjoying your favorite apps, this device is
+                crafted to keep you connected and inspired.</p>
+            <p class="p2">Continue below!</p>
+
+            <!-- scroll down -->
+            <section id="section05" class="demo">
+                <a href="#c2"><span></span></a>
+            </section>
+        </div>
+
+
+
+        <div class="c2" id="c2">
+            <h1>iPhone 16 Overview</h1>
+            <div class="co">
+                <p class="p1">-Design: Sleek, lightweight with premium finish;
+                    available in various colors. <br />
+                    -Display: 6.1-inch Super Retina XDR OLED, high resolution,
+                    up to 2000 nits brightness.<br />
+                    -Performance: A16 Bionic chip, enhanced RAM, multiple
+                    storage options (128GB, 256GB, 512GB).<br />
+                    -Camera: Triple-camera system (wide, ultra-wide, telephoto)
+                    with improved night mode and 4K video recording.<br />
+                    -Battery: All-day battery life, supports MagSafe and fast
+                    charging.<br />
+                    -Connectivity: 5G support, Wi-Fi 6E for better performance.<br />
+                    -Software: Runs the latest iOS with advanced features
+                    and security.<br />
+                    -Durability: IP68 water and dust resistance.<br />
+                    -Pricing: Competitive, varies by storage capacity.<br /></p>
+                <img src="img/iph16-1.png" alt="iPhone 16" class="iph16-1">
+            </div>
+        </div>
+
+        <div class="c3">
+            <h1>Why You Should Buy the iPhone 16</h1>
+            <p class="p1">Elevate your mobile experience with the iPhone 16, the perfect blend of cutting-edge
+                technology
+                and elegant design. With its revolutionary triple-camera system, you can capture stunning photos and
+                videos
+                in any setting, ensuring every moment is preserved in breathtaking detail. The powerful A16 Bionic chip
+                guarantees lightning-fast performance, making multitasking and gaming smoother than ever. Plus, the
+                vibrant
+                Super Retina XDR display brings your content to life with vivid colors and clarity. Coupled with all-day
+                battery life and advanced 5G connectivity, the iPhone 16 keeps you connected and productive wherever you
+                go.
+                Join the community of satisfied users who have chosen the iPhone 16 and experience the innovation and
+                quality that Apple is renowned for—don't miss out on the device that redefines what a smartphone can be!
+            </p>
+            <img src="img/Sans titre (1080 x 600 px).png" alt="iPhone 16" class="iph16-2">
+        </div>
+
+        <div class="c4">
+            <div class="main">
+                <div class="c4-1">
+                    <img src="img/Design sans titre.png" alt="iPhone 16" class="iph16-3">
+                </div>
+                <div class="section">
+                    <h3>Available Colors</h3>
+                    <div class="colors">
+                        <button class="color black"></button>
+                        <button class="color white"></button>
+                        <button class="color pink"></button>
+                        <button class="color green"></button>
+                        <button class="color blue"></button>
+                    </div>
+
+                    <h3>Storage</h3>
+                    <div class="storage">
+                        <button class="bt">128GB</button>
+                        <button class="bt">256GB</button>
+                        <button class="bt">512GB</button>
+                    </div>
+
+                    <h3>Payment Method</h3>
+                    <div class="payment">
+                        <button class="pm visa"><img src="img/111.png" alt="Visa or Mastercard"></button>
+                        <button class="pm apple"><img src="img/Apple_Pay_logo.png" alt="Apple Pay"></button>
+                    </div>
+
+                    <div class="Buttons">
+                        <button class="btn complete" id="button">Complete Your Purchase</button>
+                        <script>
+                            let button = document.getElementById("button");
+                            button.addEventListener('click', function () {
+                                for (let i = 0; i < 70; i++) {
+                                    let spark = document.createElement('i');
+                                    spark.classList.add('spark');
+
+
+                                    const randomX = (Math.random() - 0.5) * window.innerWidth;
+                                    const randomY = (Math.random() - 0.5) * window.innerHeight;
+
+                                    spark.style.setProperty('--x', randomX + 'px');
+                                    spark.style.setProperty('--y', randomY + 'px');
+
+                                    const randomSize = Math.random() * 8 + 2;
+                                    spark.style.height = randomSize + 'px';
+                                    spark.style.width = randomSize + 'px';
+
+                                    document.body.appendChild(spark);
+
+                                    setTimeout(function () {
+                                        spark.remove();
+                                    }, 2000);
+                                }
+                            });
+                        </script>
+                        <button class="btn checkout">Proceed to Checkout</button>
+                        <button class="btn order">Place Your Order</button>
+                    </div>
+                </div>
+            </div>
+            <p class="ppp1">Our payment process is securely encrypted, ensuring your personal information is protected
+                at
+                all
+                times, as verified by Apple.</p>
+        </div>
+
+        <div class="footer">
+            <div class="gen1">
+                <p class="pa1">
+                    Copyright © 2024 YouCode. All rights reserved. <br/>
+                     Website designed by
+                    Hamza Atig.<br />
+                    Contact Us:<br />
+                       • Email: hamzaatig@icloud.com<br />
+                       • Phone: (123) 456-7890<br />
+                    Follow Us:<br />
+                    <a href="https://www.facebook.com/">   • Facebook</a><br />
+                    <a href="https://twitter.com/">   • Twitter</a><br />
+                    <a href="https://instagram.com/">   • Instagram</a><br />
+                    <div class="line"></div>
+                </p>
+                <p class="pa2">
+                    Quick Links: <br />
+                    • Privacy Policy<br />
+                    • Terms of Service<br />
+                    • Return Policy<br />
+                    Join Our Community: Subscribe for updates on the <br/>
+                     latest products and exclusive deals!
+                </p>
+            </div>
+
+            <div class="Subscribe">
+                <p class="ent1">
+                    <input type="email" placeholder="   your email here" class="email">
+                </p>
+                <button id="sub">Subscribe</button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
